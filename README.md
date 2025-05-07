@@ -7,6 +7,35 @@
 2. Create and switch to the deploy-setup branch: using the command and save
    git checkout -b deploy-setup
 
+## Tools Needed
+
+Before you begin, make sure you have the following installed:
+
+1. **Git**  
+   - Verify with:  
+     ```bash
+     git --version
+     ```
+2. **VS Code** (optional but recommended) with **Git Bash** terminal  
+3. **Docker Desktop**  
+   - Verify with:  
+     ```bash
+     docker --version
+     ```
+4. **Terraform CLI**  
+   - Install from https://developer.hashicorp.com/terraform/downloads  
+   - Verify with:  
+     ```bash
+     terraform --version
+     ```
+5. **AWS CLI**  
+   - Install via pip (`pip install awscli`) or from  
+     https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html  
+   - Verify with:  
+     ```bash
+     aws --version
+     ```
+6. **An AWS account** with credentials configured (`aws configure`)  
 
 
 # Overview
