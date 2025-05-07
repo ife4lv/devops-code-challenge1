@@ -1,3 +1,14 @@
+## Getting Started
+1. Clone your forked repository:
+   '''bash
+   git clone https://github.com/ife4lv/devops-code-challenge1.git Tech-Challenge-1
+   cd Tech-Challenge-1
+
+2. Create and switch to the deploy-setup branch: using the command and save
+   git checkout -b deploy-setup
+
+
+
 # Overview
 This repository contains a React frontend, and an Express backend that the frontend connects to.
 
