@@ -1,7 +1,3 @@
-# data "aws_iam_policy_document" "task_exec_assume" {
-#   # (see above)
-# }
-
 // modules/ecs_cluster/main.tf
 
 // Create the ECS cluster
@@ -91,6 +87,7 @@ resource "aws_ecs_service" "backend" {
   launch_type     = "FARGATE"
   desired_count   = 1
   task_definition = aws_ecs_task_definition.backend.arn
+  force_new_deployment = true
 
   network_configuration {
     subnets         = var.subnet_ids
@@ -106,6 +103,7 @@ resource "aws_ecs_service" "frontend" {
   launch_type     = "FARGATE"
   desired_count   = 1
   task_definition = aws_ecs_task_definition.frontend.arn
+  force_new_deployment = true
 
   network_configuration {
     subnets         = var.subnet_ids
@@ -113,3 +111,4 @@ resource "aws_ecs_service" "frontend" {
     assign_public_ip = true
   }
 }
+
