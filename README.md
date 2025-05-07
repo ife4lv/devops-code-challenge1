@@ -3,6 +3,7 @@
    '''bash
    git clone https://github.com/ife4lv/devops-code-challenge1.git Tech-Challenge-1
    cd Tech-Challenge-1
+   ```
 
 2. Create and switch to the deploy-setup branch: using the command and save
    git checkout -b deploy-setup
@@ -37,7 +38,46 @@ Before you begin, make sure you have the following installed:
      ```
 6. **An AWS account** with credentials configured (`aws configure`)  
 
+## Infrastructure Setup
 
+We use Terraform modules to keep our infrastructure code organized. Here’s the directory layout:
+
+## Local Development
+
+Before deploying, you can run the app locally to verify it works.
+
+1. **Install Node.js & npm**  
+   - Download from https://nodejs.org/en/download/ (Windows)  
+   - Or use your OS’s package manager (macOS: Homebrew, Linux: apt, yum, etc.)  
+   - Verify with:
+     ```bash
+     node --version
+     npm --version
+     ```
+
+2. **Run the Backend**  
+   ```bash
+   cd backend
+   npm ci
+   npm start
+   ```
+---
+
+**Step X: Add an “Extras” section**  
+Right after Local Development, append:
+
+```markdown
+## Extras
+
+Feel free to showcase any of the following (optional):
+
+- Dockerizing the frontend and backend  
+- Terraform or shell scripts to automate environment setup  
+- A CI/CD pipeline (e.g. GitHub Actions or Jenkinsfile)  
+- Running the application in a serverless environment (Lambda, Fargate, etc.)  
+- Any other enhancements that demonstrate advanced skills
+
+### This is the original markdown below
 # Overview
 This repository contains a React frontend, and an Express backend that the frontend connects to.
 
