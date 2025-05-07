@@ -1,6 +1,6 @@
-data "aws_iam_policy_document" "task_exec_assume" {
-  # (see above)
-}
+# data "aws_iam_policy_document" "task_exec_assume" {
+#   # (see above)
+# }
 
 // modules/ecs_cluster/main.tf
 

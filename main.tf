@@ -21,7 +21,7 @@ module "jenkins" {
   source            = "./modules/jenkins_ec2"
   name              = "techchall1"
   ami_id            = var.ami_id            // or hardcode your AMI if preferred
-  instance_type     = "t3.micro"
+  instance_type     = "t2.micro"
   key_name          = var.key_name
   subnet_id         = module.vpc.public_subnet_ids[0]
   security_group_id = module.sg.jenkins_sg_id
