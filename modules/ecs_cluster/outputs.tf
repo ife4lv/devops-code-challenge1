@@ -22,10 +22,10 @@ output "ecr_repo_backend" {
 
 output "service_frontend" {
   description = "ARN of the frontend ECS service"
-  value       = aws_ecs_service.frontend.arn
+  value       = aws_ecs_service.frontend.id
 }
 
 output "service_backend" {
   description = "ARN of the backend ECS service"
-  value       = aws_ecs_service.backend.arn
+  value       = aws_ecs_service.backend.id
 }
