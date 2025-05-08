@@ -46,9 +46,16 @@ terraform.rc
 # AWS key
 W7TC.pem
 
+# Docker
+.dockerignore
+**/.DS_Store
+
 # Node modules
 backend/node_modules/
 frontend/node_modules/
+.npm
+.env
+*.log
 
 # VSCode
 .vscode/
